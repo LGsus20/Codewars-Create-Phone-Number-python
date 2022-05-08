@@ -1,16 +1,4 @@
 def create_phone_number(n):
-    phone_number = "("
-    counter = 0
-    for number in n:
-        if (counter < 2):
-            phone_number += str(number)
-        elif(counter == 2):
-            phone_number += str(number) + ") "
-        elif(counter <5):
-            phone_number += str(number)
-        elif (counter == 5):
-            phone_number += str(number)+ "-"
-        else:
-            phone_number += str(number) 
-        counter += 1
+    phone_number = "({}{}{}) {}{}{}-{}{}{}{}".format(n[0],n[1],n[2],n[3],n[4],
+                                                 n[5],n[6],n[7],n[8],n[9])
     return phone_number
